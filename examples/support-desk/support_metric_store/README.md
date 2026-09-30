@@ -22,7 +22,7 @@ support_metric_store/
 | | |
 | --- | --- |
 | Domains | 1 (`service_delivery`) |
-| Entities built | 1 of 3 (`Ticket`; `incident` and `release` are unbuilt) |
+| Entities built | 2 of 3 (`Ticket`, `Incident`; `release` is unbuilt) |
 | Grains | 3 (`account_id`, `workspace_id`, `user_id`) |
 | Cadences | 2 (Daily, Cumulative) |
 | Tables per entity | 6 |
