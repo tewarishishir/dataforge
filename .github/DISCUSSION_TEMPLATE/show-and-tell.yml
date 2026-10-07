@@ -1,11 +1,9 @@
-name: Adoption
-description: Say you are using Dataforge. A name and a link are enough.
 title: "Using Dataforge: "
 body:
   - type: markdown
     attributes:
       value: |
-        This is how anonymous use becomes a name. A maintainer can add your
+        Show what you built with Dataforge. A maintainer can add your
         reply to ADOPTERS.md. The support-desk project in this repository is
         a demo, not an adopter.
   - type: input
