@@ -1,0 +1,40 @@
+name: Engine adapter
+description: Propose support for another data platform in forge-init and forge-dbx.
+labels: [engine-adapter]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A new engine needs an adapter section in both `forge-init` and `forge-dbx`.
+        It has to declare what it cannot do rather than approximate it. DuckDB
+        marking `orchestration` engine-unsupported is the pattern. See
+        [AGENTS.md](https://github.com/tewarishishir/dataforge/blob/main/AGENTS.md#adding-a-platform-engine).
+  - type: input
+    id: engine
+    attributes:
+      label: Engine
+      placeholder: snowflake
+    validations:
+      required: true
+  - type: textarea
+    id: discovery
+    attributes:
+      label: How forge-init would discover it
+      description: The CLI or catalog query that lists zones, tables, columns, and jobs.
+    validations:
+      required: true
+  - type: textarea
+    id: unsupported
+    attributes:
+      label: What it cannot do
+      description: Each manifest capability this engine would mark engine-unsupported, and why.
+    validations:
+      required: true
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: Will you write the adapter?
+      options:
+        - Yes, I will open a pull request
+        - I can test one
+        - No, requesting it
