@@ -1,5 +1,6 @@
 # dataforge
 
+[![checks](https://github.com/tewarishishir/dataforge/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/tewarishishir/dataforge/actions/workflows/checks.yml)
 [![MIT license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/tewarishishir/dataforge)](https://github.com/tewarishishir/dataforge/releases/tag/v0.1.0)
 [![Discussions](https://img.shields.io/github/discussions/tewarishishir/dataforge)](https://github.com/tewarishishir/dataforge/discussions)
