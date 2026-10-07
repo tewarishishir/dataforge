@@ -1,5 +1,9 @@
 # dataforge
 
+[![MIT license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/tewarishishir/dataforge)](https://github.com/tewarishishir/dataforge/releases/tag/v0.1.0)
+[![Discussions](https://img.shields.io/github/discussions/tewarishishir/dataforge)](https://github.com/tewarishishir/dataforge/discussions)
+
 Four agent skills that build data pipelines, with no knowledge of your data in
 any of them.
 
@@ -62,11 +66,17 @@ on the pull request afterward.
 
 ## Install
 
-The skills are plain Markdown and work with any agent that can read files. For
-native packaging:
+The skills are plain Markdown and work with any agent that can read files.
 
 ```bash
-git clone https://github.com/<owner>/dataforge.git
+git clone https://github.com/tewarishishir/dataforge.git
+```
+
+Claude Code can install from this repository directly:
+
+```bash
+claude plugin marketplace add tewarishishir/dataforge
+claude plugin install dataforge@dataforge
 ```
 
 | Agent | Points at |
@@ -75,13 +85,19 @@ git clone https://github.com/<owner>/dataforge.git
 | Cursor | `.cursor-plugin/plugin.json` |
 | GitHub Copilot | `.github/agents/*.agent.md` |
 
-All three are generated from `skills/*/SKILL.md` by `node scripts/package.mjs`.
-CI fails if they drift, so the source stays single.
+The agent packages and `.claude-plugin/marketplace.json` are generated from
+`skills/*/SKILL.md` by `node scripts/package.mjs`. CI fails if they drift, so
+the source stays single.
 
 ## Status
 
-Beta. The DuckDB adapter and the GitHub Issues intake are new in `0.1.0` and
-are exercised by the example project rather than by production use. See
-[CHANGELOG.md](CHANGELOG.md).
+Beta. The DuckDB adapter and the GitHub Issues intake are new in
+[`0.1.0`](https://github.com/tewarishishir/dataforge/releases/tag/v0.1.0) and
+are exercised by the example project rather than by production use.
+
+- [Changelog](CHANGELOG.md)
+- [Adopters](ADOPTERS.md)
+- [Cite this project](CITATION.cff)
+- [Discussions](https://github.com/tewarishishir/dataforge/discussions)
 
 MIT licensed.
