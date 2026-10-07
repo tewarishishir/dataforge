@@ -13,6 +13,13 @@ one generated manifest. The skills read it. They never contain it. That
 boundary is what makes the same skills work across two different data
 platforms, and it is also why this repository could be published at all.
 
+[![Issue #3 to merged pull request #4: twelve files of pipeline, schema, and test code, every gate passing, deployed to two DuckDB zones and reconciled to source](assets/demo-pr.png)](https://github.com/tewarishishir/dataforge/pull/4)
+
+That is a real run. [Issue #3](https://github.com/tewarishishir/dataforge/issues/3)
+asked for incident metrics; `forge-builder` produced
+[pull request #4](https://github.com/tewarishishir/dataforge/pull/4). Run it
+yourself with [DEMO.md](examples/support-desk/DEMO.md).
+
 ```bash
 brew install duckdb
 cd examples/support-desk && python seed.py
@@ -96,6 +103,7 @@ Beta. The DuckDB adapter and the GitHub Issues intake are new in
 are exercised by the example project rather than by production use.
 
 - [Changelog](CHANGELOG.md)
+- [Contributing](CONTRIBUTING.md)
 - [Adopters](ADOPTERS.md)
 - [Cite this project](CITATION.cff)
 - [Discussions](https://github.com/tewarishishir/dataforge/discussions)
