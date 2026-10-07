@@ -1,0 +1,59 @@
+name: Bug
+description: A skill did something wrong, or a check passed when it should have failed.
+labels: [bug]
+body:
+  - type: dropdown
+    id: skill
+    attributes:
+      label: Skill
+      options:
+        - forge-init
+        - forge-dbx
+        - forge-lint
+        - forge-builder
+        - Packaging or hooks
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: phase
+    attributes:
+      label: Phase or step
+      description: For forge-builder, the phase number. For the others, the step or section.
+      placeholder: Phase 4, schema
+  - type: dropdown
+    id: engine
+    attributes:
+      label: Engine
+      description: The value of platform.engine in the resolved manifest.
+      options:
+        - duckdb
+        - databricks
+    validations:
+      required: true
+  - type: dropdown
+    id: agent
+    attributes:
+      label: Agent
+      options:
+        - Claude Code
+        - Cursor
+        - GitHub Copilot
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you asked for, what the skill did, and what you expected instead. Paste the command or prompt.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: >-
+        If it reproduces against examples/support-desk, give the steps. Otherwise
+        describe the manifest shape, and leave out real catalog, table, and domain
+        names.

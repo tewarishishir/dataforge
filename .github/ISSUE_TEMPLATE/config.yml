@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Question
+    url: https://github.com/tewarishishir/dataforge/discussions/categories/q-a
+    about: Ask how to set something up or whether dataforge fits your platform.
+  - name: Using dataforge
+    url: https://github.com/tewarishishir/dataforge/discussions/categories/show-and-tell
+    about: Tell us what you built. It can go into ADOPTERS.md.
