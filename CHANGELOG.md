@@ -17,6 +17,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 First public release. Four skills carry the whole pattern.
 
+This release was extracted from a private codebase and published as a single
+commit. Development history from here on is public.
+
 ### Added
 
 - `forge-init` — the config boundary. Reads a short seed manifest and discovers
