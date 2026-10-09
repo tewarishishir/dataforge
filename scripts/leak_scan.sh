@@ -29,7 +29,7 @@ PATTERNS=(
 )
 
 PATTERN=$(IFS='|'; echo "${PATTERNS[*]}")
-TARGETS=(skills assets)
+TARGETS=(skills assets packaging)
 
 cd "$(dirname "$0")/.."
 

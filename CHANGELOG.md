@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- `scripts/build_agensi_zip.sh` builds a single-folder zip for agensi.io from
+  `git archive`, with `packaging/agensi/SKILL.md` as an entry point that routes
+  to the four skills. It refuses to write a bundle containing binaries,
+  symlinks, or a root `SKILL.md` without `name` and `description`.
+- `scripts/leak_scan.sh` now scans `packaging/` as well.
+
 ### Changed
 
 - The CI workflow file is now `.github/workflows/checks.yml`, matching its
