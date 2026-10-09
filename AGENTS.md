@@ -47,7 +47,7 @@ python scripts/validate_contracts.py      # manifest and reference contracts
 python scripts/tests/test_verify.py       # forge-builder artifact verification
 python scripts/tests/test_validate_contracts.py
 node hooks/scripts/session-start.test.mjs
-scripts/leak_scan.sh                      # no business context in skills/ or assets/
+scripts/leak_scan.sh                      # no business context in skills/, assets/, or packaging/
 cd examples/support-desk && python seed.py --check
 ```
 

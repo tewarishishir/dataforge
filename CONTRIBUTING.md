@@ -29,6 +29,15 @@ Example values in documentation come from the support-desk vocabulary only.
 [AGENTS.md](AGENTS.md) has the full check list that CI runs, the layout, and
 what a new platform engine has to declare.
 
+## Listings
+
+dataforge is also listed on [agensi.io](https://www.agensi.io), which serves
+an uploaded zip rather than this repository, so it does not update itself. On
+each release, run `scripts/build_agensi_zip.sh` and upload the zip it writes
+to `dist/`. The bundle's entry point is
+[packaging/agensi/SKILL.md](packaging/agensi/SKILL.md); update its routing
+table when a skill is added or renamed.
+
 ## License
 
 Contributions are accepted under the [MIT license](LICENSE).

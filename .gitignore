@@ -13,6 +13,9 @@ dataforge.manifest.resolved.yaml
 *.duckdb
 *.duckdb.wal
 
+# Listing uploads built by scripts/build_agensi_zip.sh
+dist/
+
 # Python
 __pycache__/
 *.py[cod]
