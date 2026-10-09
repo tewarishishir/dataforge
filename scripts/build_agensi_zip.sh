@@ -31,7 +31,7 @@ mkdir -p "$bundle"
 
 git archive "$ref" -- \
   skills assets examples/support-desk packaging/agensi/SKILL.md \
-  README.md LICENSE CHANGELOG.md \
+  README.md LICENSE CHANGELOG.md CONTRIBUTING.md ADOPTERS.md CITATION.cff \
   | tar -x -C "$bundle"
 
 mv "$bundle/packaging/agensi/SKILL.md" "$bundle/SKILL.md"
