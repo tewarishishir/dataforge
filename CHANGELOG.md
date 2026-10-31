@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   to the four skills. It refuses to write a bundle containing binaries,
   symlinks, or a root `SKILL.md` without `name` and `description`.
 - `scripts/leak_scan.sh` now scans `packaging/` as well.
+- The README opens with a 24-second looping clip of the demo run, linked to
+  the full recording attached to the v0.1.0 release. The agensi bundle leaves
+  out every image under `assets/`.
 
 ### Changed
 

@@ -14,6 +14,10 @@ one generated manifest. The skills read it. They never contain it. That
 boundary is what makes the same skills work across two different data
 platforms, and it is also why this repository could be published at all.
 
+[![dataforge demo: the pull request forge-builder opened, its scope and deployment reports on the issue, and the generated diff](assets/demo-loop.webp)](https://github.com/tewarishishir/dataforge/releases/download/v0.1.0/dataforge-demo.mp4)
+
+[Watch the full 8-minute demo](https://github.com/tewarishishir/dataforge/releases/download/v0.1.0/dataforge-demo.mp4) (mp4, 20 MB).
+
 [![Issue #3 to merged pull request #4: twelve files of pipeline, schema, and test code, every gate passing, deployed to two DuckDB zones and reconciled to source](assets/demo-pr.png)](https://github.com/tewarishishir/dataforge/pull/4)
 
 That is a real run. [Issue #3](https://github.com/tewarishishir/dataforge/issues/3)
