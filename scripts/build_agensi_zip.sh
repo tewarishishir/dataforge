@@ -37,8 +37,8 @@ git archive "$ref" -- \
 mv "$bundle/packaging/agensi/SKILL.md" "$bundle/SKILL.md"
 rm -rf "$bundle/packaging"
 
-# Agensi rejects binaries; the README image is the only one tracked.
-rm -f "$bundle/assets/demo-pr.png"
+# Agensi rejects binaries; the README images are the only ones tracked.
+find "$bundle/assets" -type f \( -name '*.png' -o -name '*.webp' -o -name '*.gif' \) -delete
 rm -f "$bundle/skills/forge-builder/.build-state/.gitkeep"
 
 links="$(find "$bundle" -type l)"
